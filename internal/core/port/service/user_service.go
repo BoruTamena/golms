@@ -1,10 +1,10 @@
 package service
 
 import (
-	"github.com/BoruTamena/internal/core/models/request"
+	models "github.com/BoruTamena/internal/core/models/request"
 	"go.uber.org/zap"
 )
 
 type UserService interface {
-	Register(request.User, *zap.Logger) error
+	Register(models.User, *zap.Logger) error
 }

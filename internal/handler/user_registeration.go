@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/BoruTamena/internal/core/entity"
-	"github.com/BoruTamena/internal/core/models/request"
+	models "github.com/BoruTamena/internal/core/models/request"
 	"github.com/BoruTamena/internal/core/port/service"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
@@ -36,7 +36,7 @@ func (engine *userHandler) InitRouter() {
 
 func (handler *userHandler) SignUP(c *gin.Context) {
 
-	var user request.User
+	var user models.User
 	// binding user data
 	err := c.ShouldBind(&user)
 

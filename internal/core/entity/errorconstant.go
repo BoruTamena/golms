@@ -7,6 +7,7 @@ import (
 var errors = errorx.NewNamespace("apperr")
 
 var (
+	ReqErr  = errors.NewType("BADREQUEST_ERR")
 	AuthErr = errors.NewType("AUTHENTICATION_ERR")
 	ValErr  = errors.NewType("VALIDATION_ERR")
 )

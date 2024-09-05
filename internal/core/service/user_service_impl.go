@@ -2,7 +2,7 @@ package service
 
 import (
 	"github.com/BoruTamena/internal/core/entity"
-	"github.com/BoruTamena/internal/core/models/request"
+	models "github.com/BoruTamena/internal/core/models/request"
 	"github.com/BoruTamena/internal/core/port/repository"
 	"github.com/BoruTamena/internal/core/port/service"
 	"go.uber.org/zap"
@@ -20,7 +20,7 @@ func NewUserService(rep repository.UserRepository) service.UserService {
 
 }
 
-func (us userServiceImpl) Register(user request.User, lg *zap.Logger) error {
+func (us userServiceImpl) Register(user models.User, lg *zap.Logger) error {
 
 	if err := user.Validate(); err != nil {
 
