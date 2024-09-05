@@ -1,0 +1,49 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test binary
+*.test
+
+# Output of the build process
+/build/
+bin/
+out/
+
+# Go vendor directory (if you use Go modules, otherwise use `vendor/`)
+vendor/
+
+# Dependency directories (auto-generated)
+Godeps/
+
+# Editor and IDE configuration files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Environment variables file
+.env
+
+# Database
+*.db
+
+# PostgreSQL data dumps
+*.sql
+
+# Temporary files and caches
+*.out
+*.tmp
+
+# Coverage files
+*.coverprofile
+*.cov
+*.coverage
+coverage.out
+
+# Ignore the Go cache directory
+go.sum
+go.mod
